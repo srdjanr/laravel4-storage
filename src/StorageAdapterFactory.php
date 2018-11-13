@@ -65,6 +65,7 @@ abstract class StorageAdapterFactory
                         ],
                         'region' => $service['region'],
                         'version' => 'latest',
+                        'endpoint' => $service['endpoint'] , // srdjan
                     ]
                 );
                 return new AwsS3Adapter($client, $connection['bucket']);
